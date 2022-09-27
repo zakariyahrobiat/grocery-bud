@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 4rem 0 1rem 0;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(2, 2, 96);
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: rgba(2, 2, 96, 0.8);
+}
+.button-container button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  border: none;
+  text-align: left;
+  padding: 0.2rem 0.5rem;
+  color: white;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+button img {
+  width: 20%;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+  gap: 1rem;
+}
+button p {
+  font-size: 0.9rem;
+}
+
+.main .image-container {
+  background-color: rgb(196, 251, 233);
+  left: 0;
+  padding: 1rem;
+  margin-left: -1rem;
+  width: 80vw;
+}
+.image-container .displayImage {
+  position: relative;
+  width: 90vw;
+}
+.image-container .displayImage img {
+  animation-name: display;
+  animation-duration: 2s;
+  width: 100%;
+
+  animation-iteration-count: 1;
+}
+
+@keyframes display {
+  0% {
+    transform: translate(5%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+.image-container .displayImage .active {
+  animation-name: active;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes active {
+  0% {
+    transform: translate(5%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+.image-container .smallImg {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.image-container .smallImg img {
+  width: 100%;
+  height: 10vh;
+  object-fit: contain;
+}
+.image-container .displayImage .text-container {
+  position: absolute;
+  bottom: -1rem;
+  background-color: white;
+  padding: 1rem;
+  width: 85vw;
+  transition: all 2s linear;
+  animation-name: text;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes text {
+  0% {
+    transform: translate(-5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.image-container .displayImage .text-container .text-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.main .text-container form {
+  display: none;
+}
+@media screen and (min-width: 778px) {
+  h1 {
+    font-size: 5.2rem;
+
+    font-weight: 700;
+  }
+  .button-container {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-top: 5rem;
+    gap: 6rem;
+  }
+  .main .text-container {
+    width: 50%;
+    padding-top: 5rem;
+  }
+  .main .image-wrapper {
+    width: 50%;
+    margin-left: -2rem;
+  }
+  .main .image-container {
+    width: 30vw;
+    padding: 3rem;
+    padding-left: 5rem;
+  }
+  .image-container .displayImage {
+    width: 40vw;
+    object-fit: contain;
+  }
+  .image-container .displayImage img {
+    height: 100vh;
+  }
+  .image-container .displayImage .text-container {
+    width: 22vw;
+    padding: auto;
+    right: 0;
+    padding-top: 1.5rem;
+  }
+  .image-container .displayImage .text-container p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+  .main .text-container form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .main .text-container form input {
+    padding: 1rem;
+    width: 50%;
+    border: 1px solid rgba(5, 5, 192, 0.5);
+    border-radius: 0.3rem;
+  }
+  .main .text-container form button {
+    padding: 1rem 1.5rem;
+    width: 25%;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+  }
+}
