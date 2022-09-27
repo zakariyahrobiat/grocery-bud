@@ -150,6 +150,7 @@ body {
     flex-direction: row-reverse;
     padding: 1rem;
     justify-content: space-between;
+    align-items: flex-start;
     z-index: 10;
     background-color: blue;
     transform: translateY(-100vh);
@@ -170,6 +171,7 @@ body {
   }
   .navBar .link a {
     font-size: 2rem;
+    color: white;
   }
   .navBar .links {
     margin-bottom: 2rem;
