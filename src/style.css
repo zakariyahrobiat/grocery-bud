@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f1f5f8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  width: 90vw;
+  max-width: 100%;
+  background-color: white;
+  margin: 5rem 0;
+  padding: 2rem 0;
+  text-align: center;
+}
+header {
+  text-align: center;
+}
+form {
+  width: 100%;
+  margin-top: 2rem;
+}
+form input {
+  width: 70%;
+  padding: 10px;
+  background-color: #f1f5f8;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-size: 1.5rem;
+}
+form button {
+  width: 30%;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #0492ff;
+}
+.container .list {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.container .list li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+.container .list .edit {
+  color: green;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.container .list .delete {
+  color: red;
+  font-size: 1.5rem;
+}
+.container .clear {
+  color: red;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  cursor: pointer;
+}
+.error {
+  background-color: rgb(251, 232, 232);
+  color: rgb(236, 41, 41);
+  padding: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin: 0 2rem 1rem 2rem;
+  border-radius: 3px;
+}
+.success {
+  background-color: aquamarine;
+  color: rgb(2, 89, 60);
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin: 0 2rem 1rem 2rem;
+  border-radius: 5px;
+}
+@media screen and (min-width: 778px) {
+  .container {
+    width: 50vw;
+  }
+}
