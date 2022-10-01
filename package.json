@@ -1,9 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "grocery-bud",
-=======
-  "name": "cowrywise-clone",
->>>>>>> 6633dcbeffe73c024f4bbffc292e1a38eb10db59
+  
+
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,24 +12,17 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-<<<<<<< HEAD
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0"
-=======
-    "react-dom": "^18.2.0"
->>>>>>> 6633dcbeffe73c024f4bbffc292e1a38eb10db59
+
+
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-<<<<<<< HEAD
+
     "@vitejs/plugin-react": "^2.0.1",
     "vite": "^3.0.7"
   }
 }
-=======
-    "@vitejs/plugin-react": "^2.1.0",
-    "vite": "^3.1.0"
-  }
-}
->>>>>>> 6633dcbeffe73c024f4bbffc292e1a38eb10db59
+
